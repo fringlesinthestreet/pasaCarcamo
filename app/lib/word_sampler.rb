@@ -10,6 +10,10 @@ class WordSampler
 
       word = WordSampler.words_started_by(letter)
 
+      if word.nil?
+        raise "Falta la letra #{letter}" 
+      end
+
       # Si ya está en el set, se debe buscar otra
       while assigned_words_set.include?(word) do
         word = WordSampler.words_started_by(letter)
