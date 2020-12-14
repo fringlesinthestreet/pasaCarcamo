@@ -5,9 +5,4 @@ class PlayerWord < ApplicationRecord
 
   belongs_to :player
   belongs_to :word
-
-  validates :word, uniqueness: {
-    scope:   :player,
-    message: 'Each word can be assigned 1 time to a player'
-  }
 end
