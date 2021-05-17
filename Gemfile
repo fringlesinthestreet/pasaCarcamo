@@ -8,6 +8,7 @@ ruby '2.7.2'
 gem 'active_model_serializers', '~> 0.10.12'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jbuilder', '~> 2.10.1'
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 gem 'pg', '~> 1.2.3'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
